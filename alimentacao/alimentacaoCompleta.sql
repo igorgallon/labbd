@@ -50,6 +50,14 @@ VALUES	('CDE41AF12', 'DEPARTAMENTO'),
 		('3ABA01L69F', 'DEPARTAMENTO'),
 		('APEO254MLA', 'DEPARTAMENTO'),
 		('LKMN548T94', 'DEPARTAMENTO');
+		
+insert into revisao(siape, pe_estado, idTurma, parecer, r_estado,dataDeRevisao,)
+values
+('000002', 'pendente' , 1, 'Parece muito bom','pendente','2016-12-31'),
+('000003', 'reprovado', 2, 'Parece meio errado','pendente','2011-11-31'),
+('000004', 'aprovado' , 3, 'Está meio estranho','pendente','2012-12-31'),
+('000005', 'pendente' , 4, 'Não gostei','pendente','2013-12-31'),
+('000006', 'pendente' , 5, 'Aprovado','pendente','2013-12-31');
 
 INSERT INTO MEMBRO
 VALUES	('15025035015', 'CDE41AF12', '10', 'TA', 'No. 123'),
