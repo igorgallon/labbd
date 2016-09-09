@@ -75,6 +75,7 @@ create table disciplina(
 	creditosPraticos int not null,
 	creditosTeoricos int not null,
 	siglaDepartamento varchar(5) not null,
+	nome varchar(50) not null,
 	foreign key (siglaDepartamento) references departamento(sigla),
 	primary key (codigoDisciplina)
 );
@@ -131,7 +132,7 @@ create table revisao(
 	pe_estado varchar(5) not null, -- Estado do Plano de Ensino
 	idturma integer not null,	
 	parecer char(20),
-	r_estado varchar(5), -- Estado da revis„o do plano de ensino
+	r_estado varchar(5), -- Estado da revis√£o do plano de ensino
 	dataDeRevisao date,
 	primary key(siape, pe_estado, idturma),
 	foreign key (siape, pe_estado, idTurma) references planoDeEnsino(siape, estado, idTurma)
