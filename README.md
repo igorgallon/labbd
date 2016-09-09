@@ -1,2 +1,25 @@
-# labbd
-Lab BD - Turma 6B - Scripts DB2
+# Lab BD - Turma 6B - Scripts DB2
+
+Tabelas:
+CONSELHODEDEPARTAMENTO
+TABLE REVISAO
+TURMAHORARIO
+PLANODEENSINO
+TURMA
+REQUISITOS
+DISCIPLINA
+DOCENTE_CARGO_ADMINISTRATIVO
+DOCENTE
+DEPARTAMENTO
+TAS
+SERVIDOR
+MEMBRO
+CONSELHO
+PESSOA
+
+Integrantes:
+  Gabriel Tutui
+  Guilherme Ramos
+  Igor Gallon
+  Matheus Almeida
+  Victor Otavio
