@@ -338,5 +338,10 @@ VALUES('APEO254MLA','DQ');
 INSERT INTO CONSELHODEDEPARTAMENTO(CODIGOCONSELHO,SIGLA)
 VALUES('LKMN548T94','DM');
 
-	
-	
+insert into revisao(siape, pe_estado, idTurma, parecer, r_estado,dataDeRevisao)
+values
+('000001', 'pendente' , 1250, 'Parece muito bom',		'pendente', '2016-12-31'),
+('000001', 'pendente' , 1251, 'Parece muito bom',		'pendente', '2016-12-31'),
+('000001', 'pendente' , 1252, 'Parece muito bom',		'pendente', '2016-12-31'),
+('000001', 'pendente' , 1253, 'Parece muito bom',		'pendente', '2016-12-31'),
+('000001', 'pendente' , 1254, 'Parece muito bom',		'pendente', '2016-12-31');
