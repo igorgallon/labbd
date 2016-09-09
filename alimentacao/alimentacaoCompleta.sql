@@ -1,45 +1,45 @@
 INSERT INTO PESSOA 
 	(CPF, RG, NOME, ENDERECO_CIDADE, ENDERECO_BAIRRO, ENDERECO_NUMERO, 
 	ENDERECO_LOGRADOURO, ENDERECO_COMPLEMENTO, ENDERECO_CEP) 
-VALUES ('00000000001', '000000001', 'Jo„o Souza', 'Araraquara', 
-       'Jardim Azul', 01, 'Rua JosÈ Silva', NULL, '00000001'),
-       ('00000000002', '000000002', 'Tomas Le„o', 'S„o Carlos', 
+VALUES ('00000000001', '000000001', 'Jo√£o Souza', 'Araraquara', 
+       'Jardim Azul', 01, 'Rua Jos√© Silva', NULL, '00000001'),
+       ('00000000002', '000000002', 'Tomas Le√£o', 'S√£o Carlos', 
        'Jardim Romano', 115, 'Avenida Marechal Costa', NULL, '00000002'),
-       ('00000000003', '000000003', 'Maria Josefina', 'S„o Carlos', 
-       'Cidade Vermelha', 34, 'Rua Silva JosÈ', NULL, '00000003'),
-       ('12345678910', '274882768', 'Ana Maria', 'IbatÈ', 
-       'Vila It·lia', 247, 'Rua XV de Novembro', NULL, '31524896'),
-       ('10987654321', '178934565', 'Carlos Lebre', 'S„o Carlos', 
-       'Centro', 845, 'Rua JosÈ Silva', '5∞ Andar', '13347798'),
-       ('24246468610', '893111475', 'F·bio Trello', 'IbatÈ', 
-       'Vila It·lia', 497, 'Rua XV de Novembro', '13∞ Andar', '31524896'),
-       ('13135357509', '744563125', 'Carla Le„o', 'S„o Carlos', 
+       ('00000000003', '000000003', 'Maria Josefina', 'S√£o Carlos', 
+       'Cidade Vermelha', 34, 'Rua Silva Jos√©', NULL, '00000003'),
+       ('12345678910', '274882768', 'Ana Maria', 'Ibat√©', 
+       'Vila It√°lia', 247, 'Rua XV de Novembro', NULL, '31524896'),
+       ('10987654321', '178934565', 'Carlos Lebre', 'S√£o Carlos', 
+       'Centro', 845, 'Rua Jos√© Silva', '5¬∞ Andar', '13347798'),
+       ('24246468610', '893111475', 'F√°bio Trello', 'Ibat√©', 
+       'Vila It√°lia', 497, 'Rua XV de Novembro', '13¬∞ Andar', '31524896'),
+       ('13135357509', '744563125', 'Carla Le√£o', 'S√£o Carlos', 
        'Jardim Romano', 115, 'Avenida Marechal Costa', NULL, '00000002'),
-       ('10293847566', '224753985', 'John Jo„o', 'S„o Carlos', 
+       ('10293847566', '224753985', 'John Jo√£o', 'S√£o Carlos', 
        'Jardim Romano', 1150, 'Avenida Almirante Machado', NULL, '46655523'),
        ('56473829105', '441525367', 'Renato Augustino', 'Araraquara', 
        'Jardim Azul', 2145, 'Avenida Marechal Costa', NULL, '00000002'),
-       ('12825651201', '426652139', 'Fernando Rocha', 'S„o Carlos', 
-       'Centro', 500, 'Avenida Central', 'TÈrreo', '21365354'),
+       ('12825651201', '426652139', 'Fernando Rocha', 'S√£o Carlos', 
+       'Centro', 500, 'Avenida Central', 'T√©rreo', '21365354'),
        ('10020030010', '289167819', 'Johann Bach', 'Ribeirao Preto', 
        'Jardim Feliz', 112, 'Rua das Felicidades', NULL, '13573009'),
-       ('11021031011', '927251927', 'Manoel de Barros', 'S„o Carlos', 
+       ('11021031011', '927251927', 'Manoel de Barros', 'S√£o Carlos', 
        'Vila da Amizade', 48, 'Rua da Ostentacao', NULL, '13356290'),
-       ('12022032012', '118338290', 'Amancio de Oliveira', 'IbatÈ', 
+       ('12022032012', '118338290', 'Amancio de Oliveira', 'Ibat√©', 
        'Jardim Paulista', 1124, 'Rua dois', NULL, '11345190'),
-       ('13023033013', '182649277', 'Maria da Silva Souza', 'S„o Carlos', 
+       ('13023033013', '182649277', 'Maria da Silva Souza', 'S√£o Carlos', 
        'Vila Monteiro', 9, 'Rua Dona Alexandrina ', NULL, '13360270'),
        ('14024034014', '223716289', 'Inacio Pereira', 'Araraquara', 
-       'Centro', 998, 'Rua Pindamonhangaba', '6∞ Andar', '11918189'),
-       ('15025035015', '181726229', 'Domenico Scarlatti', 'IbatÈ', 
+       'Centro', 998, 'Rua Pindamonhangaba', '6¬∞ Andar', '11918189'),
+       ('15025035015', '181726229', 'Domenico Scarlatti', 'Ibat√©', 
        'Vila Italiana', 80, 'Rua das Sonatas', NULL, '12289090'),
-       ('16026036016', '098262722', 'Anna Magdalena Bach', 'S„o Carlos', 
-       'Jardim Alem„o', 1673, 'Rua dos compositores', NULL, '78456219'),
-       ('17027037017', '882819310', 'Jo„o M·rio da Silva', 'IbatÈ', 
-       'Centro', 12, 'Avenida dos campeoes', '3∫ Andar', '13456040'),
+       ('16026036016', '098262722', 'Anna Magdalena Bach', 'S√£o Carlos', 
+       'Jardim Alem√£o', 1673, 'Rua dos compositores', NULL, '78456219'),
+       ('17027037017', '882819310', 'Jo√£o M√°rio da Silva', 'Ibat√©', 
+       'Centro', 12, 'Avenida dos campeoes', '3¬∫ Andar', '13456040'),
        ('18028038018', '121231234', 'Adriana Calcanhoto', 'Araraquara', 
        'Jardim Musical', 100, 'Rua das Borboletas', NULL, '11278900'),
-       ('19029039019', '827191118', 'Pompeu Pomposo', 'S„o Carlos', 
+       ('19029039019', '827191118', 'Pompeu Pomposo', 'S√£o Carlos', 
        'Vila Prado', 280, 'Avenida Ra Tim Bum', NULL, '98981020');
 
 INSERT INTO CONSELHO(CODIGOCONSELHO,TIPO)
@@ -125,9 +125,9 @@ VALUES	('000015'),
 insert into departamento(sigla, centroAcademico, nome)
 values
 		('DC', 'CCET', 'Departamento de Computacao'),
-		('DM', 'CCET', 'Departamento de Matem·tica'),
-		('DF', 'CCET', 'Departamento de FÌsica'),
-		('DQ', 'CCET', 'Departamento de QuÌmica');
+		('DM', 'CCET', 'Departamento de Matem√°tica'),
+		('DF', 'CCET', 'Departamento de F√≠sica'),
+		('DQ', 'CCET', 'Departamento de Qu√≠mica');
 		
 INSERT INTO DOCENTE 
 	(SIAPE, POSICAO, TIPO_DOCENTE, TOTAL_CARGA_SEMESTRE, SIGLA_D)
@@ -180,10 +180,10 @@ INSERT INTO DOCENTE_CARGO_ADMINISTRATIVO
 	VALUES('000012','2016-04-10','COORDENADOR CURSO');
 
 insert into disciplina(codigoDisciplina, creditosPraticos, creditosTeoricos, siglaDepartamento)
-values	(020338, 0, 4, 'DC'), --intro a logica
-		(089109, 0, 4, 'DM'), --calculo i
-		(099015, 0, 4, 'DF'), --fisica i
-		(071170, 0, 4, 'DQ'); --fundamentos de quimica
+values (020338, 0, 4, 'DC','Introdu√ß√£o a L√≥gica'), --intro a logica
+(089109, 0, 4, 'DM','C√°lculo I'), --calculo i
+(099015, 0, 4, 'DF','F√≠sica I'), --fisica i
+(071170, 0, 4, 'DQ','Fundamentos de Qu√≠mica'); --fundamentos de quimica
 
 INSERT INTO TURMA VALUES 
    (DEFAULT, '1000','A', '2016', '1',50);
