@@ -29,7 +29,7 @@ CREATE TABLE PESSOA(
 
 CREATE TABLE CONSELHO(
 	CODIGOCONSELHO   VARCHAR(10)	NOT NULL,
-  	TIPO  VARCHAR(12) NOT NULL, -- PODE SER CONSELHO DE GRADUA��O OU DE DEPARTAMENTO
+  	TIPO  VARCHAR(12) NOT NULL, -- PODE SER CONSELHO DE GRADUAÇÃO OU DE DEPARTAMENTO
   	PRIMARY KEY(CODIGOCONSELHO)
 );
 
@@ -147,10 +147,10 @@ CREATE TABLE TURMAHORARIO(
 
 create table revisao(
 	siape char(6) not null,
-	pe_estado varchar(5) not null, -- Estado do Plano de Ensino
+	pe_estado varchar(9) not null, -- Estado do Plano de Ensino
 	idturma integer not null,	
 	parecer char(20),
-	r_estado varchar(5), -- Estado da revisão do plano de ensino
+	r_estado varchar(9), -- Estado da revisÃ£o do plano de ensino
 	dataDeRevisao date,
 	primary key(siape, pe_estado, idturma),
 	foreign key (siape, pe_estado, idTurma) references planoDeEnsino(siape, estado, idTurma)
@@ -163,4 +163,3 @@ CREATE TABLE CONSELHODEDEPARTAMENTO(
   	FOREIGN KEY (SIGLA) references DEPARTAMENTO(SIGLA),
   	PRIMARY KEY(CODIGOCONSELHO)
 );
-
