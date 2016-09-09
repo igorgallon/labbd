@@ -1,46 +1,44 @@
 INSERT INTO PESSOA 
-	(CPF, RG, NOME, ENDERECO_CIDADE, ENDERECO_BAIRRO, ENDERECO_NUMERO, 
-	ENDERECO_LOGRADOURO, ENDERECO_COMPLEMENTO, ENDERECO_CEP) 
-VALUES ('00000000001', '000000001', 'Jo√£o Souza', 'Araraquara', 
-       'Jardim Azul', 01, 'Rua Jos√© Silva', NULL, '00000001'),
-       ('00000000002', '000000002', 'Tomas Le√£o', 'S√£o Carlos', 
-       'Jardim Romano', 115, 'Avenida Marechal Costa', NULL, '00000002'),
-       ('00000000003', '000000003', 'Maria Josefina', 'S√£o Carlos', 
-       'Cidade Vermelha', 34, 'Rua Silva Jos√©', NULL, '00000003'),
-       ('12345678910', '274882768', 'Ana Maria', 'Ibat√©', 
-       'Vila It√°lia', 247, 'Rua XV de Novembro', NULL, '31524896'),
-       ('10987654321', '178934565', 'Carlos Lebre', 'S√£o Carlos', 
-       'Centro', 845, 'Rua Jos√© Silva', '5¬∞ Andar', '13347798'),
-       ('24246468610', '893111475', 'F√°bio Trello', 'Ibat√©', 
-       'Vila It√°lia', 497, 'Rua XV de Novembro', '13¬∞ Andar', '31524896'),
-       ('13135357509', '744563125', 'Carla Le√£o', 'S√£o Carlos', 
-       'Jardim Romano', 115, 'Avenida Marechal Costa', NULL, '00000002'),
-       ('10293847566', '224753985', 'John Jo√£o', 'S√£o Carlos', 
-       'Jardim Romano', 1150, 'Avenida Almirante Machado', NULL, '46655523'),
+VALUES	('00000000001', '000000001', 'Jo„o Souza', 'Araraquara', 
+       'Jardim Azul', 01, 'Rua JosÈ Silva', NULL, '00000001', 'j.souza@yahoo.com', NULL, '1638921181', '16981527822', NULL),
+       ('00000000002', '000000002', 'Tomas Le„o', 'S„o Carlos', 
+       'Jardim Romano', 115, 'Avenida Marechal Costa', NULL, '00000002', 'leao1994@hotmail.com', NULL, '1633826122', '11992621811', '1631812822'),
+       ('00000000003', '000000003', 'Maria Josefina', 'S„o Carlos', 
+       'Cidade Vermelha', 34, 'Rua Silva JosÈ', NULL, '00000003', 'm4ria1osefina@bol.com', NULL, '1638291811', '16992817102', '1692011181'),
+       ('12345678910', '274882768', 'Ana Maria', 'IbatÈ', 
+       'Vila It·lia', 247, 'Rua XV de Novembro', NULL, '31524896', 'anamaria@gmail.com', 'anamaria@hotmail.com', '1133829181', '1699273622', NULL),
+       ('10987654321', '178934565', 'Carlos Lebre', 'S„o Carlos', 
+       'Centro', 845, 'Rua JosÈ Silva', '5∞ Andar', '13347798', 'lebrao2008@gmail.com', NULL, '16971627288', NULL, NULL),
+       ('24246468610', '893111475', 'F·bio Trello', 'IbatÈ', 
+       'Vila It·lia', 497, 'Rua XV de Novembro', '13∞ Andar', '31524896', 'trello.fabio@live.com', NULL, '1633829277', '16987226272', NULL),
+       ('13135357509', '744563125', 'Carla Le„o', 'S„o Carlos', 
+       'Jardim Romano', 115, 'Avenida Marechal Costa', NULL, '00000002', 'lion.of.darkness@gmail.com', 'darkness.of.lion@hotmail.com', '1633826122', '16993829101', NULL),
+       ('10293847566', '224753985', 'John Jo„o', 'S„o Carlos', 
+       'Jardim Romano', 1150, 'Avenida Almirante Machado', NULL, '46655523', 'john_joao@globo.com', 'jon_jon@ig.com.br', '19972345611', NULL, NULL),
        ('56473829105', '441525367', 'Renato Augustino', 'Araraquara', 
-       'Jardim Azul', 2145, 'Avenida Marechal Costa', NULL, '00000002'),
-       ('12825651201', '426652139', 'Fernando Rocha', 'S√£o Carlos', 
-       'Centro', 500, 'Avenida Central', 'T√©rreo', '21365354'),
+       'Jardim Azul', 2145, 'Avenida Marechal Costa', NULL, '00000002', 'renaugustino@ufscar.br', 'renatinho@outlook.com', '1639442891', NULL, NULL),
+       ('12825651201', '426652139', 'Fernando Pedrosa', 'S„o Carlos', 
+       'Centro', 500, 'Avenida Central', 'TÈrreo', '21365354', 'pedroska_nandinho@gmail.com', NULL, '11982712282', NULL, NULL),
        ('10020030010', '289167819', 'Johann Bach', 'Ribeirao Preto', 
-       'Jardim Feliz', 112, 'Rua das Felicidades', NULL, '13573009'),
-       ('11021031011', '927251927', 'Manoel de Barros', 'S√£o Carlos', 
-       'Vila da Amizade', 48, 'Rua da Ostentacao', NULL, '13356290'),
-       ('12022032012', '118338290', 'Amancio de Oliveira', 'Ibat√©', 
-       'Jardim Paulista', 1124, 'Rua dois', NULL, '11345190'),
-       ('13023033013', '182649277', 'Maria da Silva Souza', 'S√£o Carlos', 
-       'Vila Monteiro', 9, 'Rua Dona Alexandrina ', NULL, '13360270'),
+       'Jardim Feliz', 112, 'Rua das Felicidades', NULL, '13573009', 'bach_johann@terra.com', NULL, '11990281828', '1633829292', NULL),
+       ('11021031011', '927251927', 'Manoel de Barros', 'S„o Carlos', 
+       'Vila da Amizade', 48, 'Rua da Ostentacao', NULL, '13356290', 'mano.barros@hotmail.com', 'barros.mano@gmail.com', '1633271821', NULL, NULL),
+       ('12022032012', '118338290', 'Amancio de Oliveira', 'IbatÈ', 
+       'Jardim Paulista', 1124, 'Rua dois', NULL, '11345190', 'amancio_oliveira@outlook.com', NULL, '17998227281', NULL, NULL),
+       ('13023033013', '182649277', 'Maria da Silva Souza', 'S„o Carlos', 
+       'Vila Monteiro', 9, 'Rua Dona Alexandrina ', NULL, '13360270', 'mariazinha2016@hotmail.com', NULL, '16999282282', NULL, NULL),
        ('14024034014', '223716289', 'Inacio Pereira', 'Araraquara', 
-       'Centro', 998, 'Rua Pindamonhangaba', '6¬∞ Andar', '11918189'),
-       ('15025035015', '181726229', 'Domenico Scarlatti', 'Ibat√©', 
-       'Vila Italiana', 80, 'Rua das Sonatas', NULL, '12289090'),
-       ('16026036016', '098262722', 'Anna Magdalena Bach', 'S√£o Carlos', 
-       'Jardim Alem√£o', 1673, 'Rua dos compositores', NULL, '78456219'),
-       ('17027037017', '882819310', 'Jo√£o M√°rio da Silva', 'Ibat√©', 
-       'Centro', 12, 'Avenida dos campeoes', '3¬∫ Andar', '13456040'),
+       'Centro', 998, 'Rua Pindamonhangaba', '6∞ Andar', '11918189', 'inacio@bol.com', 'inacio2008@gmail.com', '11990288828', NULL, NULL),
+       ('15025035015', '181726229', 'Domenico Scarlatti', 'IbatÈ', 
+       'Vila Italiana', 80, 'Rua das Sonatas', NULL, '12289090', 'scarlatti@hotmail.com', NULL, '1938291190', '16987623382', '11990823345'),
+       ('16026036016', '098262722', 'Anna Magdalena Bach', 'S„o Carlos', 
+       'Jardim Alem„o', 1673, 'Rua dos compositores', NULL, '78456219', 'anna.bach@ufscar.br', 'bach.anna@live.com', '1621818821', '19990621189', NULL),
+       ('17027037017', '882819310', 'Jo„o M·rio da Silva', 'IbatÈ', 
+       'Centro', 12, 'Avenida dos campeoes', '3∫ Andar', '13456040', 'joao.mario.silva@outlook.com', 'mario.joao@gmail.com', '1132323131', '31980723458', NULL),
        ('18028038018', '121231234', 'Adriana Calcanhoto', 'Araraquara', 
-       'Jardim Musical', 100, 'Rua das Borboletas', NULL, '11278900'),
-       ('19029039019', '827191118', 'Pompeu Pomposo', 'S√£o Carlos', 
-       'Vila Prado', 280, 'Avenida Ra Tim Bum', NULL, '98981020');
+       'Jardim Musical', 100, 'Rua das Borboletas', NULL, '11278900', 'calcanhoto@ufscar.br', 'a.calcanhoto@gmail.com', '1638721124', '16990721192', '1633425671'),
+       ('19029039019', '827191118', 'Pompeu Pomposo', 'S„o Carlos', 
+       'Vila Prado', 280, 'Avenida Ra Tim Bum', NULL, '98981020', 'pomeu@ufscar.br', 'pomposo@outlook.com', '19988721121', NULL, NULL);
 
 INSERT INTO CONSELHO(CODIGOCONSELHO,TIPO)
 VALUES	('CDE41AF12', 'DEPARTAMENTO'),
@@ -51,14 +49,6 @@ VALUES	('CDE41AF12', 'DEPARTAMENTO'),
 		('APEO254MLA', 'DEPARTAMENTO'),
 		('LKMN548T94', 'DEPARTAMENTO');
 		
-insert into revisao(siape, pe_estado, idTurma, parecer, r_estado,dataDeRevisao,)
-values
-('000002', 'pendente' , 1, 'Parece muito bom','pendente','2016-12-31'),
-('000003', 'reprovado', 2, 'Parece meio errado','pendente','2011-11-31'),
-('000004', 'aprovado' , 3, 'Est√° meio estranho','pendente','2012-12-31'),
-('000005', 'pendente' , 4, 'N√£o gostei','pendente','2013-12-31'),
-('000006', 'pendente' , 5, 'Aprovado','pendente','2013-12-31');
-
 INSERT INTO MEMBRO
 VALUES	('15025035015', 'CDE41AF12', '10', 'TA', 'No. 123'),
 		('16026036016', 'CDE41AF12', '10', 'TA', 'No. 122'),
@@ -132,10 +122,11 @@ VALUES	('000015'),
 		
 insert into departamento(sigla, centroAcademico, nome)
 values
-		('DC', 'CCET', 'Departamento de Computacao'),
-		('DM', 'CCET', 'Departamento de Matem√°tica'),
-		('DF', 'CCET', 'Departamento de F√≠sica'),
-		('DQ', 'CCET', 'Departamento de Qu√≠mica');
+		('DC', 'CCET', 'Departamento de ComputaÁ„o'),
+		('DM', 'CCET', 'Departamento de Matem·tica'),
+		('DF', 'CCET', 'Departamento de FÌsica'),
+		('DQ', 'CCET', 'Departamento de QuÌmica'),
+		('DEMA','CCET', 'Departamento de Eng Materiais');
 		
 INSERT INTO DOCENTE 
 	(SIAPE, POSICAO, TIPO_DOCENTE, TOTAL_CARGA_SEMESTRE, SIGLA_D)
@@ -167,7 +158,7 @@ INSERT INTO DOCENTE_CARGO_ADMINISTRATIVO
 	VALUES('000002','2014-03-01', '2016-02-28','COORDENADOR CURSO');
 INSERT INTO DOCENTE_CARGO_ADMINISTRATIVO
 	(SIAPE, PERIODO_INICIO, PERIODO_TERMINO, NOME_CARGO)
-	VALUES('000002','2015-08-12', '2016-09-05','PRESIDENTE CONSELHO GRAD');
+	VALUES('000002','2016-03-12', NULL,'PRESIDENTE CONSELHO GRAD');
 INSERT INTO DOCENTE_CARGO_ADMINISTRATIVO
 	(SIAPE, PERIODO_INICIO, PERIODO_TERMINO, NOME_CARGO)
 	VALUES('000003','2012-08-10','2013-09-01','CHEFE DEPARTAMENTO');
@@ -187,93 +178,99 @@ INSERT INTO DOCENTE_CARGO_ADMINISTRATIVO
 	(SIAPE, PERIODO_INICIO, NOME_CARGO)
 	VALUES('000012','2016-04-10','COORDENADOR CURSO');
 
-insert into disciplina(codigoDisciplina, creditosPraticos, creditosTeoricos, siglaDepartamento)
-values (020338, 0, 4, 'DC','Introdu√ß√£o a L√≥gica'), --intro a logica
-(089109, 0, 4, 'DM','C√°lculo I'), --calculo i
-(099015, 0, 4, 'DF','F√≠sica I'), --fisica i
-(071170, 0, 4, 'DQ','Fundamentos de Qu√≠mica'); --fundamentos de quimica
+insert into disciplina(codigoDisciplina, creditosPraticos, creditosTeoricos, siglaDepartamento, nome)
+values	('020338', 0, 4, 'DC','IntroduÁ„o a LÛgica'),
+		('089109', 0, 4, 'DM','C·lculo I'),
+		('089110', 0, 4, 'DM','C·lculo II'),
+		('089111', 0, 4, 'DM','C·lculo III'),
+		('099015', 0, 4, 'DF','FÌsica I'),
+		('099016', 0, 4, 'DF','FÌsica II'),
+		('099017', 0, 4, 'DF','FÌsica III'),
+		('071170', 0, 4, 'DQ','Fundamentos de QuÌmica'),
+		('061282', 0, 2, 'DEMA', 'Mec‚nica dos SÛlidos'),
+		('028911', 2, 0, 'DC', 'Laboratorio BD');
+		
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '020338','A', '2016', '1',50);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '020338','B', '2016', '1',50);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '020338','C', '2016', '1',50);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '089109','A', '2016', '1',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '089110','A', '2016', '1',90);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '089111','A', '2015', '2',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '089111','B', '2015', '2',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '089111','C', '2015', '2',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '089111','D', '2015', '2',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '099015','A', '2015', '1',50);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '099016','A', '2016', '1',60);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '099016','B', '2016', '1',60);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '099017','A', '2016', '1',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '071170','A', '2016', '2',35);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '071170','B', '2016', '2',35);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '071170','C', '2016', '2',35);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '061282','A', '2015', '1',45);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '061282','B', '2015', '1',45); 
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '028911','A', '2015', '2',30);
+INSERT INTO TURMA VALUES 
+   (DEFAULT, '028911','B', '2015', '2',30);
 
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1000','A', '2016', '1',50);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1000','B', '2016', '1',50);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1000','C', '2016', '1',50);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1001','A', '2016', '1',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1002','A', '2016', '1',90);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1003','A', '2015', '2',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1003','B', '2015', '2',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1003','C', '2015', '2',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1003','D', '2015', '2',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1150','A', '2015', '1',50);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1151','A', '2016', '1',60);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1151','B', '2016', '1',60);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1004','A', '2016', '1',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1005','A', '2016', '2',35);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1005','B', '2016', '2',35);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '1005','C', '2016', '2',35);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '0800','A', '2015', '1',45);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '0800','B', '2015', '1',45); 
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '0900','A', '2015', '2',30);
-INSERT INTO TURMA VALUES 
-   (DEFAULT, '0900','B', '2015', '2',30);
-
 INSERT INTO PLANODEENSINO VALUES 
-	('000001','APROV','1250');
+	('000001','APROVADO','1250');
 INSERT INTO PLANODEENSINO VALUES 
-	('000001','APROV','1251');
+	('000001','APROVADO','1251');
 INSERT INTO PLANODEENSINO VALUES 
-	('000001','REPRO','1252');
+	('000001','REPROVADO','1252');
 INSERT INTO PLANODEENSINO VALUES 
-	('000002','APROV','1253');
+	('000002','APROVADO','1253');
 INSERT INTO PLANODEENSINO VALUES 
-	('000003','REPRO','1254');
+	('000003','REPROVADO','1254');
 INSERT INTO PLANODEENSINO VALUES 
-	('000004','REPRO','1255');
+	('000004','REPROVADO','1255');
 INSERT INTO PLANODEENSINO VALUES 
-	('000004','APROV','1256');
+	('000004','APROVADO','1256');
 INSERT INTO PLANODEENSINO VALUES 
-	('000004','APROV','1257');
+	('000004','APROVADO','1257');
 INSERT INTO PLANODEENSINO VALUES 
-	('000004','APROV','1258');
+	('000004','APROVADO','1258');
 INSERT INTO PLANODEENSINO VALUES 
-	('000005','APROV','1259');
+	('000005','PENDENTE','1259');
 INSERT INTO PLANODEENSINO VALUES 
-	('000006','REPRO','1260');
+	('000006','REPROVADO','1260');
 INSERT INTO PLANODEENSINO VALUES 
-	('000006','REPRO','1261');
+	('000006','REPROVADO','1261');
 INSERT INTO PLANODEENSINO VALUES 
-	('000007','APROV','1262');
+	('000007','APROVADO','1262');
 INSERT INTO PLANODEENSINO VALUES 
-	('000008','REPRO','1263');
+	('000008','REPROVADO','1263');
 INSERT INTO PLANODEENSINO VALUES 
-	('000009','APROV','1264');
+	('000009','APROVADO','1264');
 INSERT INTO PLANODEENSINO VALUES 
-	('000009','REPRO','1265');
+	('000009','REPROVADO','1265');
 INSERT INTO PLANODEENSINO VALUES 
-	('000010','APROV','1266');
+	('000010','APROVADO','1266');
 INSERT INTO PLANODEENSINO VALUES 
-	('000010','APROV','1267');
+	('000010','APROVADO','1267');
 INSERT INTO PLANODEENSINO VALUES 
-	('000011','APROV','1268');
+	('000011','APROVADO','1268');
 INSERT INTO PLANODEENSINO VALUES 
-	('000012','REPRO','1269');
+	('000012','REPROVADO','1269');
 
 INSERT INTO TURMAHORARIO VALUES
 	('1250',TIME('14.00.00'),2,'AT8','seg'); 
@@ -326,6 +323,13 @@ INSERT INTO TURMAHORARIO VALUES
 INSERT INTO TURMAHORARIO VALUES
 	('1269',TIME('14.00.00'),2,'AT9','ter');
 
+insert into revisao(siape, pe_estado, idTurma, parecer, r_estado,dataDeRevisao)
+values
+('000002', 'APROVADO' , 1253, 'Parece muito bom','APROVADO','2016-12-31'),
+('000003', 'REPROVADO', 1254, 'Parece meio errado','APROVADO','2011-11-27'),
+('000004', 'APROVADO' , 1256, 'Est„o meio estranho','APROVADO','2012-10-31'),
+('000005', 'PENDENTE' , 1259, 'N„o gostei','PENDENTE','2013-12-31'),
+('000006', 'REPROVADO' , 1261, 'Aprovado','PENDENTE','2013-12-31');
 
 INSERT INTO CONSELHODEDEPARTAMENTO(CODIGOCONSELHO,SIGLA)
 VALUES('CDE41AF12','DC');
@@ -337,11 +341,3 @@ INSERT INTO CONSELHODEDEPARTAMENTO(CODIGOCONSELHO,SIGLA)
 VALUES('APEO254MLA','DQ');
 INSERT INTO CONSELHODEDEPARTAMENTO(CODIGOCONSELHO,SIGLA)
 VALUES('LKMN548T94','DM');
-
-insert into revisao(siape, pe_estado, idTurma, parecer, r_estado,dataDeRevisao)
-values
-('000001', 'pendente' , 1250, 'Parece muito bom',		'pendente', '2016-12-31'),
-('000001', 'pendente' , 1251, 'Parece muito bom',		'pendente', '2016-12-31'),
-('000001', 'pendente' , 1252, 'Parece muito bom',		'pendente', '2016-12-31'),
-('000001', 'pendente' , 1253, 'Parece muito bom',		'pendente', '2016-12-31'),
-('000001', 'pendente' , 1254, 'Parece muito bom',		'pendente', '2016-12-31');

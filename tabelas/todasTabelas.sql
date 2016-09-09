@@ -1,5 +1,5 @@
 DROP TABLE CONSELHODEDEPARTAMENTO;
-DROP TABLE REVISAO; -- precisa fazer
+DROP TABLE REVISAO;
 DROP TABLE TURMAHORARIO;
 DROP TABLE PLANODEENSINO;
 DROP TABLE TURMA;
@@ -24,12 +24,17 @@ CREATE TABLE PESSOA(
 	ENDERECO_LOGRADOURO VARCHAR(50), 
 	ENDERECO_COMPLEMENTO VARCHAR(10),
 	ENDERECO_CEP VARCHAR(8),
+	EMAIL1 VARCHAR(30),
+	EMAIL2 VARCHAR(30),
+	TELEFONE1 VARCHAR(11),
+	TELEFONE2 VARCHAR(11),
+	TELEFONE3 VARCHAR(11),
 	PRIMARY KEY(CPF)
 );
 
 CREATE TABLE CONSELHO(
 	CODIGOCONSELHO   VARCHAR(10)	NOT NULL,
-  	TIPO  VARCHAR(12) NOT NULL, -- PODE SER CONSELHO DE GRADUA√á√ÉO OU DE DEPARTAMENTO
+  	TIPO  VARCHAR(12) NOT NULL, -- PODE SER CONSELHO DE GRADUA«√O OU DE DEPARTAMENTO
   	PRIMARY KEY(CODIGOCONSELHO)
 );
 
@@ -93,7 +98,7 @@ create table disciplina(
 	creditosPraticos int not null,
 	creditosTeoricos int not null,
 	siglaDepartamento varchar(5) not null,
-	nome varchar(50) not null,
+	nome varchar(30) not null,
 	foreign key (siglaDepartamento) references departamento(sigla),
 	primary key (codigoDisciplina)
 );
@@ -116,7 +121,7 @@ CREATE TABLE TURMA(
 		NO CYCLE 
 		NO CACHE
 		ORDER),
-	codDisciplina CHAR(4) NOT NULL,
+	codDisciplina CHAR(6) NOT NULL,
 	letra CHAR NOT NULL,
 	ano CHAR(4) NOT NULL,
 	semestre CHAR(1) NOT NULL,
@@ -145,12 +150,12 @@ CREATE TABLE TURMAHORARIO(
 	FOREIGN KEY (idTurma) REFERENCES TURMA (idTurma)
 );
 
-create table revisao(
+CREATE TABLE REVISAO(
 	siape char(6) not null,
 	pe_estado varchar(9) not null, -- Estado do Plano de Ensino
 	idturma integer not null,	
 	parecer char(20),
-	r_estado varchar(9), -- Estado da revis√É¬£o do plano de ensino
+	r_estado varchar(9), -- Estado da revis„o do plano de ensino
 	dataDeRevisao date,
 	primary key(siape, pe_estado, idturma),
 	foreign key (siape, pe_estado, idTurma) references planoDeEnsino(siape, estado, idTurma)
@@ -163,3 +168,4 @@ CREATE TABLE CONSELHODEDEPARTAMENTO(
   	FOREIGN KEY (SIGLA) references DEPARTAMENTO(SIGLA),
   	PRIMARY KEY(CODIGOCONSELHO)
 );
+
