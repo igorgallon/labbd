@@ -1,9 +1,9 @@
-insert into disciplina(codigoDaDisciplina, creditosPraticos, creditosTeoricos, siglaDepartamento)
+insert into disciplina(codigoDisciplina, creditosPraticos, creditosTeoricos, siglaDepartamento, nome)
 values
-(020338, 0, 4, 'DC'), --intro a logica
-(089109, 0, 4, 'DM'), --calculo i
-(099015, 0, 4, 'DF'), --fisica i
-(071170, 0, 4, 'DQ'); --fundamentos de quimica
+(020338, 0, 4, 'DC','Introdução a Lógica'), --intro a logica
+(089109, 0, 4, 'DM','Cálculo I'), --calculo i
+(099015, 0, 4, 'DF','Física I'), --fisica i
+(071170, 0, 4, 'DQ','Fundamentos de Química'); --fundamentos de quimica
 
 
 insert into departamento(sigla, centroAcademico, nome)
