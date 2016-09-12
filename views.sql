@@ -1,13 +1,14 @@
 
---Materia visão do aluno:
+--Materia visï¿½o do aluno:
 --idturma-nomedisciplina-horainicial-horafinal(calculada)-diadasemana-letra-vagas
 
 CREATE OR REPLACE VIEW vDisciplinasEmOferta AS
-	SELECT tu.idturma, d.nome, th.horario, (th.horario + th.duracao*3600) AS horariofim, th.diaDasemana, tu.letra, tu.vagas
+	SELECT tu.idturma, d.nome, th.horario, (th.horario + th.duracao*3600) AS horariofim, 
+	th.diaDasemana, tu.letra, tu.vagas, d.creditospraticos + d.creditosteoricos AS Nro_de_creditos
 	FROM turma AS tu, disciplina AS d, turmahorario AS th
 	WHERE tu.idturma = th.idturma AND tu.coddisciplina = d.codigodisciplina;  
 	
---Plano de Ensino (visão do aluno):
+--Plano de Ensino (visï¿½o do aluno):
 --nomedisciplina-nomeprofessor-situacao-letra-ano-semestre-vagas
 
 CREATE OR REPLACE VIEW vPlanoDeEnsino AS
@@ -22,10 +23,11 @@ CREATE OR REPLACE VIEW vPlanoDeEnsino AS
 
 CREATE OR REPLACE VIEW vDocenteCargoAdministrativo AS
 	SELECT d.siape, pe.nome AS Docente, de.nome AS Departamento, dca.periodo_inicio AS iniciodomandato,
+	dca.periodo_termino,
 	 d.tipo_docente, dca.nome_cargo
 	FROM docente AS d, pessoa AS pe, docente_cargo_administrativo as dca,
 		departamento AS de, servidor AS se
-	WHERE (dca.periodo_termino <= CURRENT DATE OR dca.periodo_termino = NULL)
+	WHERE (dca.periodo_termino >= CURRENT DATE OR dca.periodo_termino IS NULL)
 		AND d.siape = dca.siape 
 		AND d.sigla_d = de.sigla
 		AND d.SIAPE = se.SIAPE AND se.CPF = pe.CPF; 

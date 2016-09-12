@@ -34,17 +34,27 @@ CREATE TABLE PESSOA(
 
 CREATE TABLE CONSELHO(
 	CODIGOCONSELHO   VARCHAR(10)	NOT NULL,
-  	TIPO  VARCHAR(12) NOT NULL, -- PODE SER CONSELHO DE GRADUAÇÃO OU DE DEPARTAMENTO
+  	TIPO  VARCHAR(12) NOT NULL, -- PODE SER CONSELHO DE GRADUAï¿½ï¿½O OU DE DEPARTAMENTO
   	PRIMARY KEY(CODIGOCONSELHO)
 );
 
-CREATE TABLE Membro( 
+CREATE TABLE MEMBRO(
+	IDMEMBRO  INTEGER NOT NULL GENERATED ALWAYS AS IDENTITY(
+	START WITH 1
+	INCREMENT BY 1
+	MINVALUE 1
+	NO MAXVALUE
+	NO CYCLE
+	NO CACHE
+	ORDER
+	),
 	CPF VARCHAR(11) NOT NULL, 
 	CODIGO_CONSELHO VARCHAR(10) NOT NULL, 
 	NRO_PORTARIA_INDICACAO VARCHAR(20) NOT NULL, 
 	REPRESENTACAO VARCHAR(20), -- Grupo que representa: Docente, discente, TA
 	DOCUMENTO_POSSE VARCHAR(20),
-	PRIMARY KEY (CPF, CODIGO_CONSELHO, NRO_PORTARIA_INDICACAO), 
+	PRIMARY KEY (IDMEMBRO),
+	UNIQUE (CPF, CODIGO_CONSELHO, NRO_PORTARIA_INDICACAO), 
 	FOREIGN KEY (CPF)  REFERENCES Pessoa (CPF),
 	FOREIGN KEY (CODIGO_CONSELHO) REFERENCES CONSELHO(CODIGOCONSELHO)
 );
@@ -155,7 +165,7 @@ CREATE TABLE REVISAO(
 	pe_estado varchar(9) not null, -- Estado do Plano de Ensino
 	idturma integer not null,	
 	parecer char(20),
-	r_estado varchar(9), -- Estado da revisão do plano de ensino
+	r_estado varchar(9), -- Estado da revisï¿½o do plano de ensino
 	dataDeRevisao date,
 	primary key(siape, pe_estado, idturma),
 	foreign key (siape, pe_estado, idTurma) references planoDeEnsino(siape, estado, idTurma)
