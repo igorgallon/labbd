@@ -84,4 +84,21 @@ CREATE OR REPLACE VIEW vTurmaHorarioInconsistente AS
 		AS tho, turma AS tur, disciplina AS di 
 		WHERE tho.idturma = tur.idturma AND tur.coddisciplina = di.codigodisciplina
 		AND tho.idturma = th.idturma
-		)
+		);
+
+CREATE OR REPLACE VIEW REUNIAO_COM_PAUTAS AS 
+	SELECT r.numero_reuniao, r.data_reuniao, ip.numero_pauta, ip.descricao, ip.data_item_de_pauta, ip.status_pauta, ip.documentos
+	FROM REUNIAO AS r, ITEM_DE_PAUTA AS ip
+	WHERE r.numero_reuniao = ip.numero_reuniao;
+
+--– View para visualizacao de NOME, INICIO E FIM do semestre
+CREATE OR REPLACE VIEW CALENDARIOVIEW AS
+	SELECT nome_semestre, inicio_semestre, fim_semestre FROM CALENDARIO;
+	
+CREATE OR REPLACE VIEW vAtividade AS
+	SELECT a.codigo, a.descricao, a.inicio, a.fim, a.responsaveis, c.data_de_submissao
+	FROM Calendario AS c, Atividade AS a;
+	
+CREATE OR REPLACE VIEW vRecesso AS
+	SELECT c.data_de_submissao, r.abrangencia, r.descricao, r.inicio, r.fim
+	FROM Calendario AS c, Recesso AS r;

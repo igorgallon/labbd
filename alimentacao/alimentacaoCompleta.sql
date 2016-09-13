@@ -487,3 +487,21 @@ insert into RECESSO(data_de_submissao, abrangencia, descricao, inicio, fim)
 values('2016-07-14', 'nacional', 'Ano Novo', '2017-01-01', '2017-01-01');
 insert into RECESSO(data_de_submissao, abrangencia, descricao, inicio, fim)
 values('2016-07-14', 'nacional', 'Pascoa', '2017-03-25', '2017-03-25');
+
+insert into reuniao(data_reuniao, numero_reuniao) values('2004-07-12', 5);
+insert into reuniao(data_reuniao, numero_reuniao) values('2011-03-23', 4);
+insert into reuniao(data_reuniao, numero_reuniao) values('2008-01-01', 3);
+insert into reuniao(data_reuniao, numero_reuniao) values('2010-10-25', 2);
+insert into reuniao(data_reuniao, numero_reuniao) values('2015-03-30', 1);
+
+INSERT INTO ITEM_DE_PAUTA(numero_pauta, numero_reuniao, descricao, data_item_de_pauta, status_pauta, documentos)
+VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 1, 'Implatação dos planos de ensino no SIGA', '2016-04-02', 'Não avaliada', NULL);
+INSERT INTO ITEM_DE_PAUTA(numero_pauta, numero_reuniao, descricao, data_item_de_pauta, status_pauta, documentos)
+VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 1, 'Parceria com a University of Limerick', '2016-04-02', 'Finalizada', 'http://www.srinter.ufscar.br/edital_srinter-n.o-07-16');
+INSERT INTO ITEM_DE_PAUTA(numero_pauta, numero_reuniao, descricao, data_item_de_pauta, status_pauta, documentos)
+VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 2, 'Financiamento do projeto Cloud@UFSCar', '2016-05-29', 'Não avaliada', NULL);
+INSERT INTO ITEM_DE_PAUTA(numero_pauta, numero_reuniao, descricao, data_item_de_pauta, status_pauta, documentos)
+VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 2, 'Reparo do telhado do Departamento de Computação', '2016-05-07', 'Aceita', NULL);
+INSERT INTO ITEM_DE_PAUTA(numero_pauta, numero_reuniao, descricao, data_item_de_pauta, status_pauta, documentos)
+VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 3, 'Mudança na autenticação da rede DC-Grad', '2016-05-07', 'Aceita', NULL);
+
