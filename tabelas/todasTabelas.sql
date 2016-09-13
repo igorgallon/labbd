@@ -1,3 +1,5 @@
+DROP TABLE RECESSO;
+DROP TABLE ATIVIDADE;
 DROP TABLE CALENDARIO;
 DROP TABLE ITEM;
 DROP TABLE VISITA;
@@ -227,7 +229,7 @@ CREATE TABLE CURSO(
 
 CREATE TABLE Enade
 (
-	PERIODO_ENADE DATE NOT NULL,
+	PERIODO_ENADE VARCHAR(4) NOT NULL,
 	PRIMARY KEY (PERIODO_ENADE)
 );
 
@@ -235,14 +237,14 @@ CREATE TABLE Enade_Avalia_Curso
 (
 	ID_ENADEAVALIACURSO INTEGER NOT NULL GENERATED ALWAYS
 	AS IDENTITY
-	(START WITH 1250
+	(START WITH 1
 		INCREMENT BY 1
-		MINVALUE 1250
+		MINVALUE 1
 		NO MAXVALUE 
 		NO CYCLE 
 		NO CACHE
 	ORDER),
-	PERIODO_ENADE DATE NOT NULL,
+	PERIODO_ENADE VARCHAR(4) NOT NULL,
 	CODIGO_CURSO INTEGER NOT NULL,
 	RESULTADO_ENADE DOUBLE NOT NULL,
 	UNIQUE (PERIODO_ENADE, CODIGO_CURSO, RESULTADO_ENADE),
@@ -256,9 +258,9 @@ CREATE TABLE DISCENTE (
     CPF VARCHAR(11) NOT NULL,
     IRA INTEGER,
     DATA_CREDENCIAMENTO DATE NOT NULL,
-    DATA_REALIZACAO DATE NOT NULL,
-    ESTADO_ENADE VARCHAR(10),
-    PERIODO_ENADE DATE,
+    DATA_REALIZACAO DATE,
+    ESTADO_ENADE VARCHAR(13),
+    PERIODO_ENADE VARCHAR(4),
     PRIMARY KEY (RA),
     FOREIGN KEY (CPF) REFERENCES PESSOA (CPF),
     FOREIGN KEY (PERIODO_ENADE) REFERENCES ENADE (PERIODO_ENADE)
@@ -321,11 +323,32 @@ CREATE TABLE ITEM (
 );
 
 CREATE TABLE CALENDARIO(
-	data_de_submissao integer not null,
+	data_de_submissao DATE not null,
 	nome_semestre varchar(10),
-	inicio_semestre varchar(10),
-	fim_semestre varchar(10),
+	inicio_semestre date,
+	fim_semestre date,
 	estado varchar(30),
 	tipo integer,
 	primary key (data_de_submissao)
+);
+
+CREATE TABLE ATIVIDADE(
+	codigo CHAR(30) NOT NULL,
+  	descricao VARCHAR(300) NOT NULL,
+  	data_de_submissao_calendario DATE NOT NULL,
+  	inicio DATE,
+  	fim DATE,
+  	responsaveis VARCHAR(30), 
+  	FOREIGN KEY(data_de_submissao_calendario) REFERENCES CALENDARIO(data_de_submissao),
+  	PRIMARY KEY(data_de_submissao_calendario, codigo)
+);
+
+CREATE TABLE RECESSO
+(data_de_submissao     DATE 			 NOT NULL,
+ abrangencia           VARCHAR(80)       NOT NULL,
+ descricao             VARCHAR(80)       NOT NULL,
+ inicio                DATE              NOT NULL,
+ fim                   DATE              NOT NULL,
+ FOREIGN KEY (data_de_submissao) REFERENCES CALENDARIO(data_de_submissao),
+ PRIMARY KEY(data_de_submissao, abrangencia, inicio)
 );
