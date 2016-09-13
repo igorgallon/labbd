@@ -1,24 +1,22 @@
 
---Materia visï¿½o do aluno:
+--Materia visÃ£o do aluno:
 --idturma-nomedisciplina-horainicial-horafinal(calculada)-diadasemana-letra-vagas
--- ESSA É DO GUILHEME
+-- ESSA ï¿½ DO GUILHEME
 CREATE OR REPLACE VIEW vDisciplinasEmOferta AS
 	SELECT tu.idturma, d.nome, th.horario, (th.horario + th.duracao*3600) AS horariofim, 
 	th.diaDasemana, tu.letra, tu.vagas, d.creditospraticos + d.creditosteoricos AS Nro_de_creditos
 	FROM turma AS tu, disciplina AS d, turmahorario AS th
 	WHERE tu.idturma = th.idturma AND tu.coddisciplina = d.codigodisciplina;  
 	
-<<<<<<< HEAD
---Plano de Ensino (visï¿½o do aluno):
---nomedisciplina-nomeprofessor-situacao-letra-ano-semestre-vagas
 
-=======
--- Plano de Ensino (visão do aluno):
+--=======
+-- Plano de Ensino (visï¿½o do aluno):
 -- nomedisciplina-nomeprofessor-situacao-letra-ano-semestre-vagas
--- ESSA É DO PÃO
->>>>>>> 13aacc60cac706d370e0abb7a86b22c6f5e310eb
+-- ESSA ï¿½ DO Pï¿½O
+-- >>>>>>> 13aacc60cac706d370e0abb7a86b22c6f5e310eb
+
 CREATE OR REPLACE VIEW vPlanoDeEnsino AS
-	SELECT d.nome AS Disciplina,tu.letra, tu.ano, tu.semestre, tu.vagas, pde.estado, 
+	SELECT d.nome AS Disciplina,d.codigodisciplina, tu.letra, tu.ano, tu.semestre, tu.vagas, pde.estado, 
 	pe.nome AS Professor FROM disciplina AS d, planodeensino AS pde, turma AS tu, 
 		docente AS doc, servidor AS se, pessoa AS pe
 	WHERE tu.coddisciplina = d.codigodisciplina AND tu.idturma = pde.idturma 
@@ -26,7 +24,7 @@ CREATE OR REPLACE VIEW vPlanoDeEnsino AS
 	
 -- Docentes com cargo administrativo atualmente:
 -- SIAPE-nomedocente-departamento-posicao-tipodocente-datainicio-cargoadministrativocorrente
--- ESSA É DO TUTUI
+-- ESSA ï¿½ DO TUTUI
 CREATE OR REPLACE VIEW vDocenteCargoAdministrativo AS
 	SELECT d.siape, pe.nome AS Docente, de.nome AS Departamento, dca.periodo_inicio AS iniciodomandato,
 	dca.periodo_termino,
@@ -40,7 +38,7 @@ CREATE OR REPLACE VIEW vDocenteCargoAdministrativo AS
 	
 --Membros que participaram de um conselho:
 --nome-siape/RA-portariadeindicacao-telefone-docente/discente/TA-representacao
--- ESSA É DO MATHEUS
+-- ESSA ï¿½ DO MATHEUS
 -- siape-nome-telefone-cpf-email-endereco (servidor+pessoa)
 CREATE OR REPLACE VIEW vContatosServidor AS
 	SELECT s.siape, pe.nome, pe.cpf, pe.endereco_cidade, pe.endereco_bairro,
@@ -51,7 +49,7 @@ CREATE OR REPLACE VIEW vContatosServidor AS
 	
 -- Membros que participaram de um conselho:
 -- nome-siape/RA-portariadeindicacao-telefone-docente/discente/TA-representacao
--- ESSA É DO VASSOURA
+-- ESSA ï¿½ DO VASSOURA
 /*
 CREATE OR REPLACE VIEW vHistoricoConselho AS
 	SELECT pe.nome AS Nome, s.siape AS Identificacao, mem.nro_portaria_indicacao AS Nro_Portaria,
@@ -74,3 +72,16 @@ CREATE OR REPLACE VIEW vHistoricoPlanoEnsino AS
 	WHERE tu.coddisciplina = d.codigodisciplina AND tu.idturma = pde.idturma 
 		AND doc.SIAPE = pde.SIAPE AND doc.SIAPE = se.SIAPE AND se.CPF = pe.CPF AND
 		doc.SIAPE = r.SIAPE AND pde.idturma = r.idturma;
+		
+		
+CREATE OR REPLACE VIEW vTurmaHorarioInconsistente AS
+	SELECT th.idturma, tu.coddisciplina 
+	FROM turmahorario AS th, turma AS tu, disciplina AS d
+	WHERE th.idturma = tu.idturma AND tu.coddisciplina = d.codigodisciplina
+	AND (d.creditosteoricos+d.creditospraticos) NOT IN 
+		( 
+		SELECT SUM(tho.duracao) FROM turmahorario 
+		AS tho, turma AS tur, disciplina AS di 
+		WHERE tho.idturma = tur.idturma AND tur.coddisciplina = di.codigodisciplina
+		AND tho.idturma = th.idturma
+		)
