@@ -1,0 +1,9 @@
+CREATE OR REPLACE TRIGGER tRevisaoPendente
+BEFORE INSERT ON Revisao
+REFERENCING NEW AS novo
+FOR EACH ROW
+BEGIN
+	IF (novo.r_estado IS NULL) THEN
+		SET novo.r_estado = 'PENDENTE';
+	END IF;
+END}
