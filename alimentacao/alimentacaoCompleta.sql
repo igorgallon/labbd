@@ -505,3 +505,9 @@ VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 2, 'Reparo do telhado do Departamento d
 INSERT INTO ITEM_DE_PAUTA(numero_pauta, numero_reuniao, descricao, data_item_de_pauta, status_pauta, documentos)
 VALUES(NEXT VALUE FOR ITEM_DE_PAUTA_SEQ, 3, 'Mudança na autenticação da rede DC-Grad', '2016-05-07', 'Aceita', NULL);
 
+INSERT INTO PROPOE
+VALUES  (DEFAULT, 1, 1, '16026036016', '10', 10, NULL, 'esperando_pauta'),
+        (DEFAULT, 2, 1, '00000000003', '18', 10, '2012-01-23', 'esperando_pauta'),
+        (DEFAULT, 3, 2, '17027037017', '04', 11, NULL, 'esperando_pauta'),
+        (DEFAULT, 4, 2, '12345678910', '13', 12, '2016-08-10', 'esperando_pauta'),
+        (DEFAULT, 5, 3, '10987654321', '13', 12, '2016-08-10', 'esperando_pauta');
