@@ -20,3 +20,5 @@ END}
 
 
 SELECT disciplina_departamento('DQ') from SYSIBM.SYSDUMMY1}
+SELECT disciplina_departamento('DM') from SYSIBM.SYSDUMMY1}
+SELECT disciplina_departamento('DC') from SYSIBM.SYSDUMMY1}
