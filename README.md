@@ -8,3 +8,17 @@ Para usar o aplicativo, é necessário instalar o IBM DB2, o .NET Framework 4.5 
 
 Atente-se para o fato de que na execução dos scripts é possível que ocorra erros referentes ao operador finalizador da instrução, que deverá ser diferente de ";" para a correta execução do script NO db2.
 
+Grupo 2B
+Bruno Greco
+Guilherme Herbst Vazquez
+Jorge Luis Carvalho
+Marcelo de Oliveira da Silva
+Vinícius Fugulin Barbosa
+Widerlani Campos
+
+Grupo 6B
+Guilherme Ramos
+Gabriel Tutui
+Igor Gallon
+Matheus de Almeida
+Victor Sales
